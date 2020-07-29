@@ -14,7 +14,7 @@ def get_japanese_emoticon(file, symbol)
   emoticons_new.each_with_object({}) do |(names, value), hash|
     if value[:english] == symbol
 
-      return values[:japanese]
+      return value[:japanese]
     end 
   end 
   "Sorry, that emoticon was not found"
